@@ -1,11 +1,22 @@
 .titulo-principal{
    padding-left: 20px; 
+   text-align: center;
+}
+
+#imglogo {
+    height: 50px;
+}
+
+.logo {
+    width:80px;
+    position: absolute;
+    top: 0px;
 }
 
 
 #banner { 
      width: 100%; /*largura*/
-
+     margin-top: 20px;
 }
 
 .principal {
@@ -50,5 +61,17 @@ ul {
     width: 50%;
 }
 
+footer {
+    text-align: center;
+    background: url("bg.jpg"); /*para pegar uma imagem no css*/
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px 0 0;
+
+}
 
 
