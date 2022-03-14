@@ -74,4 +74,20 @@ footer {
 
 }
 
+nav {
+    text-transform:  uppercase; /*Muda pata letra maiuscula*/
+    font-weight: bold; /*deixa em negrito*/
+    font-size: 40px;
+    margin-top: 80px;
+}
+
+nav a {
+    color: rgb(14, 13, 13);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #2d0966;
+    text-decoration: underline; /*deixa o efeito sublinhado*/
+}
 
