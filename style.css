@@ -1,64 +1,86 @@
-.titulo-principal{
-   padding-left: 20px; 
-   text-align: center;
+header {
+    background: #BBBBBB;
+    padding: 20px 0;
 }
 
-#imglogo {
-    height: 50px;
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    
 }
 
-.logo {
-    width:80px;
-    position: absolute;
-    top: 0px;
+nav {
+    position: absolute; /*para tirar da sua pisoção inicial*/
+    top: 110px; /*coloca no topo*/
+    right: 0; /*rediriciona para direita*/
+}
+
+nav li {
+    display: inline; /* coloca os intens um ao lado do outro*/
+    margin: 0 0 0 15px; /*para dar espaços entre os itens*/
 }
 
 
-#banner { 
-     width: 100%; /*largura*/
-     margin-top: 20px;
+nav a {
+    text-transform:  uppercase; /*Muda pata letra maiuscula*/
+    color: #000000;
+    font-weight: bold; /*deixa em negrito*/
+    font-size: 22px;
+    text-decoration: none; /*nao deixa sublinhado*/
 }
 
-.principal {
-    background: #cccccc;
-    padding: 30px;
-
+nav a:hover { /*Aplica efeito quando passa o mouse por cima*/
+    color: #c78c19;
+    text-decoration: underline; /*deixa o efeito sublinhado*/
 }
 
-.titulo-centralizado {
-    text-align: center
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
 }
 
-p {     /*text-align para definir onde o texto vai ficar (centro, esquerda, direita, etc)*/
+.produtos li {
+    display: inline-block; /*um ao lado do outro*/
     text-align: center;
-}
-
-#missao{ /* # para pegar pela id */
-    font-size: 20px
-}
-
-em strong {
-    color: red;
-}
-
-.itens { /* . para pegar pelo class */
-    font-style: italic;
-}
-
-.benefícios{
-    background: #FFFFFF;
-    padding: 20px;
-}
-
-ul {
-    display: inline-block; /*Alinhamento dos elementos*/
+    width: 30%;
     vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    /* border-color: #000000;   
+    border-width: 2px;          pode fazer separado  
+    border-style: solid; */
+    border: 3px solid #000000; /*Ou tudo junto */
+    border-radius: 10px;
 }
 
-.imagembeneficios {
-    width: 50%;
+.produtos li:hover { /*Aplica efeito quando passa o mouse por cima*/
+    border-color: #c78c19;
+}
+
+.produtos li:active {  /*Aplica efeito quando o mouse esta clicado*/
+    border-color: #088C19;
+}
+
+.produtos li:hover h2 {
+    font-size: 35px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 footer {
@@ -71,23 +93,28 @@ footer {
     color: #ffffff;
     font-size: 13px;
     margin: 20px 0 0;
-
 }
 
-nav {
-    text-transform:  uppercase; /*Muda pata letra maiuscula*/
-    font-weight: bold; /*deixa em negrito*/
-    font-size: 40px;
-    margin-top: 80px;
+main {
+    width: 940px;
+    margin: 0 auto;
 }
 
-nav a {
-    color: rgb(14, 13, 13);
-    text-decoration: none;
+form {
+    margin: 40px 0;
 }
 
-nav a:hover {
-    color: #2d0966;
-    text-decoration: underline; /*deixa o efeito sublinhado*/
+form lable {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
 }
+
+form input {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
 
