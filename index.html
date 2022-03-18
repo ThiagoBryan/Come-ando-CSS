@@ -3,55 +3,62 @@
        <head>  <!-- No head ficam as configuraçoes da pagina -->
               <meta charset="UTF-8"> <!-- para indicar os caracteres usados, como acento, Ç, etc --> 
               <title>Barbearia Alura</title> <!-- Titulo na aba -->
-              <link rel="stylesheet" href="style-home.css"> <!-- para pegar o arquivo em css -->
+              
+       <link rel="stylesheet" href="reset.css"> <!-- Arquivo para reset as config da pagina -->
+       <link rel="stylesheet" href="style.css">
        
        </head>
        <body>  <!--  O que vai aparecer na tela fiva dentro do BODY -->
               
-              <header> <!-- Cria um Cabeçalho -->
-                     <h1 class="titulo-principal">Barbearia Alura</h1>
-                     <div id= "imglogo">
-                            <img class="logo" src="logo.png">
+              <header>
+                     <div class="caixa">
+                             <h1><img src="logo.png"></h1>
+                 
+                             <nav>  <!-- <nav> para navegação-->
+                                 <ul>     <!-- <a> para criar um link -->
+                                     <li><a href="index.html">Home</a></li>
+                                     <li><a href="produtos.html">Produtos</a></li>
+                                     <li><a href="contato.html">Contato</a></li>
+                                  </ul>
+                         </nav>
                      </div>
-              </header>
-              <img id="banner" src="banner.jpg">
-             
-              <div class="principal">
-                     <h2 class="titulo-centralizado">Sobre a Barbearia Alura</h2> <!-- Titulo -->
+                         </header>
+              <img class="banner" src="banner.jpg">
+       <main>
+              <section class="principal">
+                     <h2 class="titulo-principal">Sobre a Barbearia Alura</h2> <!-- Titulo -->
                                           <!-- strong para deixar em negrito -->
+                    <img class="utensilios" src="utensilios.jpg" alt="logo utensilios">
+                    
                      <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p> <!-- Paragrafo -->
                      <!-- font-size tamanho da fonte -->           <!-- em deixa em Italico -->
                      <p id="missao"><em>Nossa missão é:<strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p> <!-- Paragrafo -->
                      <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p> <!-- Paragrafo -->
                      
-              </div>
+              </section>
               
-              <div class="benefícios">
-                     <h3 class="titulo-centralizado">Benefícios</h3>
+              <section class="benefícios">
+                     <h3 class="titulo-principal">Benefícios</h3>
 
                      <ul>  <!-- Lista não ordenada -->
                             <li class="itens">Atendimento aos clientes</li> <!-- li marca os itens -->
                             <li class="itens">Espaço diferenciado</li>
                             <li class="itens">Localização</li>
                             <li class="itens">Profissionais Qualificados</li>
-                            <nav>
-                                   <a href="produtos.html">Produtos</a>
-                                   <a href="contato.html">Contato</a>
-                            </nav>
+                           
                      </ul>
                      
 
                      <img src="beneficios.jpg" class="imagembeneficios">
-              </div>
+              </section>
+       </main>
        
        
        </body>
-
        <footer> <!--Rodapé -->
               <img src="logo-branco.png">
               <p class="copyright">&copy; Copyright Barbearia Alura - 2022 </p>
           </footer>
-
 
         
         
